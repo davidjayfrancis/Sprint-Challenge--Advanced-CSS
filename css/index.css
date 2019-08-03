@@ -208,6 +208,7 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   background: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
 }
 footer {
   color: #22283B;
@@ -336,4 +337,58 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.blog-intro-text .blog-title {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.line-break {
+  width: 100%;
+  border: 1px solid #dee2e6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container {
+  padding: 0px 20px;
+}
+.blog-descriptions {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 70px;
+}
+@media (max-width: 500px) {
+  .blog-descriptions {
+    display: column;
+  }
+}
+.blog-descriptions .blog-snippet {
+  border-bottom: 1px solid #F1F1F1;
+  width: 50%;
+}
+.blog-descriptions .blog-snippet img {
+  width: 80%;
+  border-radius: 25px;
+  margin: 20px 10%;
+  transition: all 0.1s ease-in-out;
+}
+.blog-descriptions .blog-snippet img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .blog-descriptions .blog-snippet {
+    width: 100%;
+    margin: 0px;
+  }
+}
+.blog-descriptions .blog-snippet .blog-text {
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+}
+.blog-descriptions .blog-snippet h2 {
+  transition: all 0.1s ease-in-out;
+}
+.blog-descriptions .blog-snippet h2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }

@@ -1,0 +1,52 @@
+.blog-intro-text .blog-title {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.line-break {
+    .line-break-style(100%,@border-real);
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.container {
+    padding: 0px 20px;
+}
+.blog-descriptions {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 70px;
+    @media @phone {
+        display: column;
+    }
+    
+    .blog-snippet {
+        // padding-right:10px;
+        border-bottom: 1px solid @sea-shell;
+        width: 50%;
+        img {
+            width: 80%;
+            border-radius: 25px;
+            margin: 20px 10%;
+            transition: all .1s ease-in-out; 
+
+            &:hover {
+                transform: scale(1.1); 
+                cursor: pointer;
+            }
+        }
+        @media @phone {
+            width: 100%;
+            margin: 0px;
+        }
+        .blog-text {
+            text-align: center;
+            padding: 10px 30px 10px 30px;
+        }
+        h2 {
+            transition: all .1s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+}
